@@ -31,7 +31,7 @@ class SubjectSeeder extends Seeder
             'Pianoforte',
             'Violino',
             'Violoncello',
-            'Xilofono'
+            'Xilofono',
         ];
 
         foreach ($subjects as $subject)

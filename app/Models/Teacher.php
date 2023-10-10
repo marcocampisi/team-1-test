@@ -18,4 +18,14 @@ class Teacher extends Model
     {
         return $this->hasMany(Review::class);
     }
+
+    public function messages()
+    {
+        return $this->hasMany(Message::class);
+    }
+
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
+    }
 }

@@ -5,11 +5,11 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-use App\Models\Review;
+use App\Models\Message;
 
 use Illuminate\Support\Facades\Schema;
 
-class ReviewSeeder extends Seeder
+class MessageSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,7 +18,7 @@ class ReviewSeeder extends Seeder
     {
         //
         Schema::withoutForeignKeyConstraints(function(){
-            Review::truncate();
+            Message::truncate();
         });
 
         for($i = 0; $i < 100; $i++){
@@ -27,7 +27,6 @@ class ReviewSeeder extends Seeder
             Review::create([
                 'name' => fake()->name(),
                 'content' => fake()->text(),
-                'rating' => fake()->numberBetween(1, 10)
             ]);
         }
     }
