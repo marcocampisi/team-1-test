@@ -11,6 +11,6 @@ class Product extends Model
 
     public function teacher()
     {
-        return $this->hasMany(Teacher::class);
+        //return $this->hasMany(Teacher::class);
     }
 }

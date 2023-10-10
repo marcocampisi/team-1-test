@@ -22,12 +22,6 @@ return new class extends Migration
             $table->string('photo')->nullable();
             $table->unsignedInteger('phone');
             $table->dateTime('sponsoredUntil');
-            $table->unsignedBigInteger('product_id')->nullable();
-            $table->foreign('product_id')
-                ->references('id')
-                ->on('products')
-                ->onUpdate('cascade')
-                ->onDelete('set null');
             $table->string('service');
             $table->decimal('price');
             $table->timestamps();
