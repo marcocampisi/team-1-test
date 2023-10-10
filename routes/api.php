@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\Api\Orders\OrderController;
 use App\Http\Controllers\Api\Products\ProductController;
-use App\Models\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
